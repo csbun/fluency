@@ -1,0 +1,28 @@
+{
+  "name": "fluency",
+  "version": "0.0.0",
+  "description": "Simple Functional Programing Util",
+  "main": "index.js",
+  "scripts": {
+    "docs": "jsdoc2md index.js > API.md"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/csbun/fluency.git"
+  },
+  "keywords": [
+    "Functional",
+    "Programing"
+  ],
+  "author": "Hans Chan <icsbun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/csbun/fluency/issues"
+  },
+  "homepage": "https://github.com/csbun/fluency#readme",
+  "devDependencies": {
+    "eslint": "^3.0.1",
+    "eslint-config-airbnb-base": "^4.0.0",
+    "eslint-plugin-import": "^1.10.2"
+  }
+}

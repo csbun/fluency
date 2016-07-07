@@ -1,6 +1,6 @@
 {
   "name": "fluency",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Simple Functional Programing Util",
   "main": "index.js",
   "scripts": {

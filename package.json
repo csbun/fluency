@@ -2,7 +2,7 @@
   "name": "fluency",
   "version": "0.1.0",
   "description": "Simple Functional Programing Util",
-  "main": "index.js",
+  "main": "dest/index.js",
   "scripts": {
     "docs": "jsdoc2md index.js > API.md"
   },
@@ -23,6 +23,8 @@
   "devDependencies": {
     "eslint": "^3.0.1",
     "eslint-config-airbnb-base": "^4.0.0",
-    "eslint-plugin-import": "^1.10.2"
+    "eslint-plugin-import": "^1.10.2",
+    "rollup": "^0.33.0",
+    "rollup-plugin-babel": "^2.6.1"
   }
 }

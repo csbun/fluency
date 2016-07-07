@@ -1,3 +1,7 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
 /* eslint prefer-rest-params: 0 */
 
 /**
@@ -22,7 +26,7 @@ function pipe(f, g) {
  * @param {...Function} functions 多个函数
  * @return {Function} 组合后的新函数
  */
-export function compose() {
+function compose() {
   if (arguments.length > 1) {
     return Array.prototype.reduce.call(arguments, pipe);
   }
@@ -34,7 +38,7 @@ export function compose() {
  * @param {...Function} functions 多个函数
  * @return {Function} 组合后的新函数
  */
-export function any() {
+function any() {
   const fns = arguments;
   return function sequenceAny() {
     let res;
@@ -56,10 +60,12 @@ export function any() {
  * @param  {Function} fn 需要被柯里化的函数
  * @return {Function}    柯里化后的函数
  */
-export function curry(fn) {
+function curry(fn) {
   return function curriedFn() {
-    return arguments.length > 1
-      ? fn.apply(null, arguments)
-      : Function.prototype.bind.call(fn, null, arguments[0]);
+    return arguments.length > 1 ? fn.apply(null, arguments) : Function.prototype.bind.call(fn, null, arguments[0]);
   };
 }
+
+exports.compose = compose;
+exports.any = any;
+exports.curry = curry;
